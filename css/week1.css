@@ -1,0 +1,105 @@
+:root{
+    --bg-color: black;
+    --main-color:white;
+    --gray: rgba( 255, 255, 255 ,0.5);
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+header{
+    margin-bottom: 40px;
+}
+header h1{
+    font-size: 70px;
+    margin-bottom: 0;
+}
+.home{
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 0;
+}
+.home:hover{
+    color: var(--gray);
+    
+}
+.content-container{
+    display: grid;
+    grid-template-columns: 40% 1% auto;
+    grid-column-gap: 2%;
+    
+
+}
+
+.spell {
+    margin: 0;
+    font-size: 24px;
+}
+.name{
+    font-size: 34px;
+    margin: 0;
+}
+.left ul{
+    padding: 0;
+
+}
+.left ul li{
+    list-style-position: inside;
+    font-size: 20px;
+} 
+.line{
+    height: 100%;
+    width: 2px;
+    background-color: var(--gray);
+}
+.right{
+    font-size: 30px;
+    
+}
+.right p {
+    margin: 0;
+    line-height: 1.5;
+}
+.right ol{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    font-size: 25px;
+}
+.spacing{
+    width: 100%;
+    height: 2px;
+    background-color: var(--gray);
+    margin: 50px 0;    
+}
+
+@media (max-width:600px){
+    .content-container{
+        display: block;
+    }
+    .line{
+        width: 100%;
+        height: 1px;
+    }
+    .right p {
+        font-size: 20px;
+    }
+    .right ol {
+        font-size: 18px;
+    }
+}
